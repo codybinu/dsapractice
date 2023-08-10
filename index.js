@@ -8,4 +8,14 @@ function fibonacci(n) {
     }
     return fib;
 }
-console.log(fibonacci(5));
+//console.log(fibonacci(5));
+
+// the factorial of a number
+function factorial(n){
+    let mul = 1;
+    for (let i = 2; i <= n; i++) {
+        mul = mul * i;
+    }
+    return mul;
+}
+console.log(factorial(5));

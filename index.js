@@ -18,4 +18,32 @@ function factorial(n){
     }
     return mul;
 }
-console.log(factorial(5));
+// console.log(factorial(5));
+
+// the Prime number recognition [solution 1]
+function isPrime(n) {
+    if(n<2){
+        return false;
+    }
+    for (let i = 2; i < n; i++) {
+        if(n%i === 0){
+            return false;
+        }
+    }
+    return true;
+}
+// the Prime number recognition [solution 2]
+function isPrime(n) {
+    if(n<2){
+        return false;
+    }
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if(n%i === 0){
+            return false;
+        }
+    }
+    return true;
+}
+console.log(isPrime(1));
+console.log(isPrime(5));
+console.log(isPrime(4));

@@ -44,6 +44,20 @@ function isPrime(n) {
     }
     return true;
 }
-console.log(isPrime(1));
-console.log(isPrime(5));
-console.log(isPrime(4));
+// console.log(isPrime(1));
+// console.log(isPrime(5));
+// console.log(isPrime(4));
+
+//The Power of two recognition [solution 1]
+function isPowerOfTwo(n){
+    if(n<1){
+        return false;
+    }
+    while(n >1){
+        if(n%2 !== 0){
+            return false;
+        }
+        n= n/2;
+    }
+    return true;
+}

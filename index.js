@@ -61,3 +61,6 @@ function isPowerOfTwo(n){
     }
     return true;
 }
+console.log(isPowerOfTwo(1));
+console.log(isPowerOfTwo(2));
+console.log(isPowerOfTwo(5));

@@ -74,7 +74,16 @@ function isPowerOfTwoBitwise(n) {
     return (n & (n-1)) === 0;
 }
 
-console.log(isPowerOfTwoBitwise(1));
-console.log(isPowerOfTwoBitwise(2));
-console.log(isPowerOfTwoBitwise(5));
+// console.log(isPowerOfTwoBitwise(1));
+// console.log(isPowerOfTwoBitwise(2));
+// console.log(isPowerOfTwoBitwise(5));
+
+//Recursive fibonacci sequence
+function recursiveFibonacci(n) {
+    if(n<2){
+        return n;
+    }
+    return recursiveFibonacci(n-1) + recursiveFibonacci(n-2);
+}
+console.log(recursiveFibonacci(6));
 

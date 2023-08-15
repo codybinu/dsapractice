@@ -94,4 +94,20 @@ function recursiveFactorial(n) {
     }
     return n * recursiveFactorial(n-1);
 }
-console.log(recursiveFactorial(5))
+// console.log(recursiveFactorial(5))
+
+//Linear search
+function lSearch(arr, tar){
+    let retVal;
+    arr.forEach((elm,i) => {
+        // console.log(elm,i);
+        // console.log(tar);
+        if(elm == tar){
+            retVal = i;
+        }
+    }); 
+
+    return retVal  || -1;
+}
+
+console.log(lSearch([-5,2,10,4,6], 10));

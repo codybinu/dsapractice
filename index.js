@@ -85,5 +85,13 @@ function recursiveFibonacci(n) {
     }
     return recursiveFibonacci(n-1) + recursiveFibonacci(n-2);
 }
-console.log(recursiveFibonacci(6));
+//console.log(recursiveFibonacci(6));
 
+//Recursive factorial of a number
+function recursiveFactorial(n) {
+    if(n<2){
+        return 1;
+    }
+    return n * recursiveFactorial(n-1);
+}
+console.log(recursiveFactorial(5))
